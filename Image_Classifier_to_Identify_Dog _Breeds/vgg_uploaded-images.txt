@@ -1,0 +1,63 @@
+beagle
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                 Tea_cup_01.jpg  label:                    tea cup
+ 4 key:              Black_bear_01.jpg  label:                 black bear
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:          saluki, gazelle hound
+
+                Tea_cup_01.jpg: 
+Real:                    tea cup   Classifier:                       red wine
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:          saluki, gazelle hound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                Tea_cup_01.jpg: 
+Real:                    tea cup   Classifier:                       red wine  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+{'Dog_01.jpg': ['dog', 'golden retriever', 0, 1, 1], 'Dog_02.jpg': ['dog', 'saluki, gazelle hound', 0, 1, 1], 'Tea_cup_01.jpg': ['tea cup', 'red wine', 0, 0, 0], 'Black_bear_01.jpg': ['black bear', 'american black bear, black bear, ursus americanus, euarctos americanus', 1, 0, 0]}
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+** Total Elapsed Runtime: 0:0:0
